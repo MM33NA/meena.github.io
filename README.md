@@ -10,7 +10,7 @@
 
 <!-- Typing animation -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=DM+Mono&size=15&duration=3000&pause=800&color=48BB78&center=true&vCenter=true&width=600&lines=Turning+health+data+into+insights+that+matter;Commercial+determinants+%2B+behavioral+research;Python+%7C+Power+BI+%7C+ML+%7C+Dashboards;Always+curious.+Always+learning." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=DM+Mono&size=15&duration=3000&pause=800&color=48BB78&center=true&vCenter=true&width=600&lines=Turning+data+into+insights+that+matter;Commercial+determinants+%2B+behavioral+research;Python+%7C+Power+BI+%7C+ML+%7C+Dashboards;Always+curious.+Always+learning." alt="Typing SVG" />
 </a>
 
 <br/>
