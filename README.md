@@ -21,16 +21,13 @@
 ---
 
 ### 💫 About Me
-- 🔭 I’m currently working on **[Insert Project Name]**
-- 📚 Researching in the fields of **[Insert Field, e.g., AI/ML or Data Science]**
-- ⚡ Fun fact: **I love exploring new technologies and solving complex problems.**
-- 📫 Reach me at: **[Your Email]**
+
 
 ---
 
 ### 🚀 Technical Stack
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=python,js,html,css,react,git,github,vscode,pycharm,figma" />
+  <img src="https://skillicons.dev/icons?i=python,vscode,pycharm" />
 </p>
 
 ---
