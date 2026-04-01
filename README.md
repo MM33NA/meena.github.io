@@ -71,8 +71,8 @@ meena = {
 | 📊 Data Analytics | `████████████░░` 92% |
 | 🏥 Public Health Research | `███████████░░░` 88% |
 | 🐍 Python | `██████████░░░░` 82% |
-| 📈 Data Visualization | `█████████░░░░░` 85% |
-| 🤖 Machine Learning | `████████░░░░░░` 65% |
+| 📈 Data Visualization | `█████████░░░░░` 80% |
+| 🤖 AI & Machine Learning | `████████░░░░░░` 65% |
 
 ---
 
