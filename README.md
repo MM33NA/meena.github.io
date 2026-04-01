@@ -5,7 +5,7 @@
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
 
-  <a href="YOUR_GOOGLE_SCHOLAR_URL_HERE">
+  <a href="https://scholar.google.com/citations?user=lyUJXogAAAAJ&hl=en"> 
     <img src="https://img.shields.io/badge/Google_Scholar-4285F4?style=flat-square&logo=google-scholar&logoColor=white" alt="Google Scholar" />
   </a>
 
