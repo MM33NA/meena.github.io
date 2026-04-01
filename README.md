@@ -2,6 +2,13 @@
 
 ![](https://komarev.com/ghpvc/?username=MM33na)
 
+<p align="left">
+  <img src="https://komarev.com/ghpvc/?username=YOUR-GITHUB-USERNAME&label=PROFILE+VIEWS&color=0077b5&style=flat-square" />
+  <a href="https://www.linkedin.com/in/meena-maharjan-aa6b34150/">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-0077b5?style=flat-square&logo=linkedin&logoColor=white" />
+  </a>
+</p>
+
 --
 <!--
 **MM33NA/MM33NA** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
