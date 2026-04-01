@@ -1,5 +1,4 @@
 ## Hi there 👋
-![](https://komarev.com/ghpvc/?username=meena-maharjan-aa6b34150)
 
 ![](https://komarev.com/ghpvc/?username=MM33na)
 
