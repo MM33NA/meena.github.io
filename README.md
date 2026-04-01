@@ -12,8 +12,6 @@
   <img src="https://komarev.com/ghpvc/?username=MM33na&label=Profile+Views&color=0077b5&style=flat-square" alt="Profile Views" />
 </p>
 
----
-
 ### 💫 About Me
 
 * 🎓 Public Health professional with a strong focus on **data-driven research**
@@ -22,15 +20,11 @@
 * 🛠️ Currently working on **data analytics projects and dashboards (Python, Power BI)**
 * 🚀 Always curious and open to learning new technologies
 
----
-
 ### 🚀 Technical Stack
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=python,vscode,pycharm,react,git,github,powerbi" />
+  <img src="https://skillicons.dev/icons?i=python,vscode,pycharm,git,github,powerbi" />
 </p>
-
----
 
 ### 📊 GitHub Stats
 
@@ -38,8 +32,6 @@
   <img src="https://github-readme-stats.vercel.app/api?username=MM33na&show_icons=true&theme=transparent&rank_icon=github&border_radius=10" width="48%" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MM33na&layout=compact&theme=transparent&border_radius=10" width="45%" />
 </p>
-
----
 
 ### 🌱 Currently Learning
 
