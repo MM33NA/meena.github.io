@@ -13,17 +13,37 @@
 </p>
 
 --
-<!--
-**MM33NA/MM33NA** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<h1 align="center">Hi 👋, I'm Meena Maharjan</h1>
+<p align="center">
+  <strong>Researcher | Software Engineer | Lifelong Learner</strong>
+</p>
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 💫 About Me
+- 🔭 I’m currently working on **[Insert Project Name]**
+- 📚 Researching in the fields of **[Insert Field, e.g., AI/ML or Data Science]**
+- ⚡ Fun fact: **I love exploring new technologies and solving complex problems.**
+- 📫 Reach me at: **[Your Email]**
+
+---
+
+### 🚀 Technical Stack
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=python,js,html,css,react,git,github,vscode,pycharm,figma" />
+</p>
+
+---
+
+### 📊 GitHub Stats
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=MM33na&show_icons=true&theme=transparent&rank_icon=github&border_radius=10" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MM33na&layout=compact&theme=transparent&border_radius=10" width="45%" />
+</p>
+
+---
+
+### 🤝 Connect with Me
+<p align="left">
+<a href="https://www.linkedin.com/in/meena-maharjan-aa6b34150/"><img src="https://img.shields.io/badge/-LinkedIn-0077b5?style=for-the-badge&logo=linkedin" alt="LinkedIn" /></a>
+</p>
