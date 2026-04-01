@@ -4,6 +4,8 @@
   <a href="https://www.linkedin.com/in/meena-maharjan-aa6b34150/">
     <img src="https://img.shields.io/badge/LinkedIn-0077b5?style=flat-square&logo=linkedin&logoColor=white" />
   </a>
+  <img scr="https://img.shields.io/badge/GoogleScholar-0077b5?style=flat-sqare&logo=googlescholar&locoColor=white"/>
+</a>
   <img src="https://komarev.com/ghpvc/?username=MM33na" />
 </p>
 
