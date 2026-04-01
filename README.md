@@ -1,4 +1,4 @@
-## Data Analytics | AI & Machine Learning | Public Health
+## Data Analytics | AI & Machine Learning Enthusiast | Public Health
 
 <p align="center">
   <a href="https://www.linkedin.com/in/meena-maharjan-aa6b34150/">
