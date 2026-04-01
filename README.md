@@ -29,8 +29,8 @@
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=MM33na&show_icons=true&theme=dark&rank_icon=github&border_radius=10" width="47%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MM33na&layout=compact&theme=dark&border_radius=10" width="42%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=MM33na&show_icons=true&theme=radical&border_radius=10" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MM33na&layout=compact&theme=radical&border_radius=10" width="45%" />
 </p>
 
 ### 🌱 Currently Learning
