@@ -1,4 +1,4 @@
-## Hi there 👋
+## Data Analytics | AI & Machine Learning | Public Health
 
 <p align="center">
   <a href="https://www.linkedin.com/in/meena-maharjan-aa6b34150/">
@@ -10,12 +10,6 @@
   </a>
 
   <img src="https://komarev.com/ghpvc/?username=MM33na&label=Profile+Views&color=0077b5&style=flat-square" alt="Profile Views" />
-</p>
-
---
-<h1 align="center">Hi 👋, I'm Meena Maharjan</h1>
-<p align="center">
-  <strong>Researcher | Software Engineer | Lifelong Learner</strong>
 </p>
 
 ---
