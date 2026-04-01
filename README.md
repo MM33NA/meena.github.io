@@ -9,7 +9,7 @@
     <img src="https://img.shields.io/badge/Google_Scholar-4285F4?style=flat-square&logo=google-scholar&logoColor=white" alt="Google Scholar" />
   </a>
 
-  <img src="https://komarev.com/ghpvc/?username=MM33na&label=PROFILE+VIEWS&color=0077b5&style=flat-square" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=MM33na&label=Profile+Views&color=0077b5&style=flat-square" alt="Profile Views" />
 </p>
 
 --
