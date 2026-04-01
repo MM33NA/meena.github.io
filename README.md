@@ -4,7 +4,8 @@
   <a href="https://www.linkedin.com/in/meena-maharjan-aa6b34150/">
     <img src="https://img.shields.io/badge/LinkedIn-Connect-0077b5?style=flat-square&logo=linkedin&logoColor=white" />
   </a>
-</p> ![](https://komarev.com/ghpvc/?username=MM33na)
+</p> 
+![](https://komarev.com/ghpvc/?username=MM33na)
 
 --
 <!--
