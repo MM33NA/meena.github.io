@@ -69,9 +69,13 @@ meena = {
 Domain
 --------
 📊 Data Analytics
+
 🏥 Public Health Research
+
 🐍 Python
+
 📈 Data Visualization
+
 🤖 AI & Machine Learning
 
 ---
