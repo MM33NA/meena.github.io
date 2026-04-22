@@ -66,13 +66,13 @@ meena = {
 
 ## `// expertise`
 
-| Domain | Level |
-|--------|-------|
-| 📊 Data Analytics | `████████████░░` 92% |
-| 🏥 Public Health Research | `███████████░░░` 88% |
-| 🐍 Python | `██████████░░░░` 82% |
-| 📈 Data Visualization | `█████████░░░░░` 80% |
-| 🤖 AI & Machine Learning | `████████░░░░░░` 65% |
+Domain
+--------
+📊 Data Analytics
+🏥 Public Health Research
+🐍 Python
+📈 Data Visualization
+🤖 AI & Machine Learning
 
 ---
 
