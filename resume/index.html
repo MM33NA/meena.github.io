@@ -1,1 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Data Analyst & Research Professional</title>
+  <style>
+    /* CSS VARIABLES FOR EASY COLOR CUSTOMIZATION */
+    :root {
+      --primary-color: #1e293b; /* Slate 800 */
+      --secondary-color: #0284c7; /* Sky 600 */
+      --text-dark: #334155; /* Slate 700 */
+      --text-light: #64748b; /* Slate 500 */
+      --bg-light: #f8fafc; /* Slate 50 */
+      --border-color: #e2e8f0; /* Slate 200 */
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Seogoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text-dark);
+      background-color: var(--bg-light);
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+    .resume-container {
+      max-width: 1050px;
+      margin: 0 auto;
+      background: #ffffff;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    /* LEFT SIDEBAR */
+    .sidebar {
+      background-color: var(--primary-color);
+      color: #ffffff;
+      padding: 40px 30px;
+    }
+    .profile-section h1 {
+      font-size: 26px;
+      line-height: 1.2;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .profile-section .subtitle {
+      color: var(--secondary-color);
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+    .sidebar-heading {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--secondary-color);
+      margin: 30px 0 15px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 5px;
+    }
+    .contact-info p {
+      font-size: 14px;
+      margin-bottom: 10px;
+      work-break: break-all;
+    }
+    .contact-info a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+    .skill-badge-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .skill-badge {
+      background: rgba(255, 255, 255, 0.1)'
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+    /* MAIN CONTENT AREA */
+    .main-content {
+      padding: 40px 40px;
+    }
+    .summary-section p {
+      font-size: 15px;
+      color: var(--text-dark);
+      margin-bottom: 30px;
+    }
+    .section-title {
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--primary-color);
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+    .timeline-item {
+      margin-bottom: 25px;
+    }
+    .timeline-header {
+      display: flex'
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 5px;
+    }
+    .job-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--primary-color);
+    }
+    .job-meta {
+      font-size: 14px;
+      color: var(--text-light);
+      font-style: italic;
+    }
+    .job-date {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--secondary-color);
+    }
+    .timeline-item ul {
+      padding-left: 20px;
+      font-size: 14.5px;
+    }
+    .timeline-item li {
+      margin-bottom: 5px;
+    }
+    /* DASHBOARD EMBED UTILITIES */
+    .project-card {
+      background: var(--bg-light);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 20px;
+      margin-bottom: 25px;
+    }
+    .project-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 5px;
+      color: var(--primary-color);
+    }
+    .project-desc {
+      font-size: 14px;
+      margin-bottom: 15px;
+      color: var(--text-dark);
+    }
+    /* Wrapper to keep embedded data responsive */
+    .dashboard-embed-wrapper {
+      position: relative;
+      width: 100%;
+      height: 450px; /* Adjust layout depth height as preferred */
+      background: #e2e8f0;
+      border-radium: 4px;
+      overflow: hidden;
+      display: flex'
+      justify-content: center;
+      align-items: center;
+      border: 1px dashed var(--text-light);
+    }
+    .dashboard-embed-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .paceholder-text {
+      color: var(--text-light);
+      font-size: 14x;
+      text-align: center;
+      padding: 20px;
+    }
+    /* RESPONSIVE LAYOUT FOR MOBILE SCREENS */
+    @media (max-width: 768px) {
+      .resume-container {
+        grid-template-columns: 1fr;
+      }
+      body {
+        padding: 10px;
+      }
+      .main-content {
+        padding: 30px 20px:
+    }
+    }
+    /* PRINT MEDIA STYLING (Auto-optimizes clean look when saving to PDF) */
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+      .resume-container {
+        box-shadow: none;
+        grid-template-columns: 280px 1fr;
+      }
+      .dashboard-embed-wrapper {
+        display: none; /* Keeps paper /PDF prints from breaking on embedded scripts */
+      }
+      .project-card {
+        page-break-inside: avoid;
+      }
+    }
+    </style>
+  </head>
+  <body>
 
+    <div class="resume-container">
+
+      <!--LEFT COLUMN: PROFILE, CONTACT & SKILLS -->
+      <aside class="sidebar">
+        <div class="profile-section">
+          <h1>Meena Maharjan</h1>
+          <div class="subtitle">Data Analyst & Research Professional</div>
+        </div>
+
+        <div class="sidebar-heading">Contact Details</div>div>
+        <div class="contact-infor">
+          <p> Arlington, TX</p>
+          <p> <a href="tel:+1234567890">(501-273-9646)</a></p>
+          <p> <a href="mailto:email@example.com">email@example.com</a></p>
+          <p> <a href="#" target="_blank">LinkedIn Profile</a>a></p>
+          <p> <a href="#" target="_blank">GitHub Portfolio</a>a></p>
+        </div>
+
+        <div class="sidebar-heading">Technical Skills</div>
+        <div class="skill-badge-container">
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">SQL</span>
+            <span class="skill-badge">Power BI</span>
+            <span class="skill-badge">Tableau</span>
+            <span class="skill-badge">Pandas / NumPy</span>
+            <span class="skill-badge">Playwright</span>
+            <span class="skill-badge">SHA-256 Hashing</span>
+            <span class="skill-badge">Data Scraping</span>
+        </div>
+
+        <div class="sidebar-heading">Education</div>
+        <div class="contact-info">
+            <p><strong>DBA (In Progress)</strong><br>Business Intelligence & Data Analytics<br><span style="color: var(--secondary-color)">Westcliff University</span></p>
+            <br>
+            <p><strong>MS - Applied Data Analytics</strong><br>University of Central Arkansas<br><span style="color: var(--text-light)">Graduated: Dec 2024</span></p>
+            <br>
+            <p><strong>Master of Public Health (MPH)</strong><br>SRM University</p>
+            <br>
+            <p><strong>Bachelor of Business Studies</strong><br>Tribhuvan University</p>
+        </div>
+    </aside>
+
+    <!-- RIGHT COLUMN: PROFESSIONAL EXPERIENCE & PORTFOLIO -->
+    <main class="main-content">
+        
+        <section class="summary-section">
+            <h2 class="section-title">Professional Summary</h2>
+            <p>Results-driven Data Analyst and Research Professional with over 7 years of experience transforming complex public health and business data into actionable insights. Expert in designing data pipelines, building interactive visualization dashboards, and managing large-scale research initiatives with strict data integrity requirements.</p>
+        </section>
+
+        <section>
+            <h2 class="section-title">Professional Experience</h2>
+            
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span class="job-title">Research Manager / Data Analyst</span>
+                    <span class="job-date">2025 - Present</span>
+                </div>
+                <div class="job-meta">Organization Name, Location</div>
+                <ul>
+                    <li>Architected automated data harvesting infrastructure using Python and Playwright to monitor fast-moving digital programmatic networks.</li>
+                    <li>Integrated SHA-256 cryptographic notarization layers onto production file systems to ensure tamper-proof data chains for forensic audit standards.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span class="job-title">Public Health Research Manager</span>
+                    <span class="job-date">Previous Years</span>
+                </div>
+                <div class="job-meta">International Research Entities</div>
+                <ul>
+                    <li>Managed data lifecycles for multi-site field operations, validating integrity across relational databases using advanced SQL methodologies.</li>
+                    <li>Designed, deployed, and scaled cross-platform production visualization applications using Tableau and Power BI to align complex metrics for leadership.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Interactive Data Projects</h2>
+            
+            <!-- PROJECT AREA WITH EMBED PLACEHOLDER -->
+            <div class="project-card">
+                <div class="project-title">Project One: Interactive Public Dashboard</div>
+                <div class="project-desc">A live dashboard tracking structural field metrics. Built using automated data engineering frameworks to ingest raw CDC situation summary data dynamically.</div>
+                
+                <div class="dashboard-embed-wrapper">
+                    <!-- 🛠️ HOW TO EMBED YOUR LIVE DASHBOARD:
+                         Replace the placeholder <div> below with your real <iframe> code or embed script block.
+                    -->
+                    <div class="placeholder-text">
+                        <strong>[ Tableau / Power BI Live Embed Code Placeholder ]</strong><br>
+                        To display your live map/chart, paste your script or iframe asset tag directly inside this wrapper.
+                    </div>
+                    
+                    <!-- Example of an iframe implementation:
+                    <iframe src="https://public.tableau.com/views/YOUR-DASHBOARD-URL" allowfullscreen></iframe> 
+                    -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+</div>
+
+</body>
+</html>
