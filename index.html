@@ -1,321 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume | Data Analyst & Research Professional</title>
-  <style>
-    /* CSS VARIABLES FOR EASY COLOR CUSTOMIZATION */
-    :root {
-      --primary-color: #1e293b; /* Slate 800 */
-      --secondary-color: #0284c7; /* Sky 600 */
-      --text-dark: #334155; /* Slate 700 */
-      --text-light: #64748b; /* Slate 500 */
-      --bg-light: #f8fafc; /* Slate 50 */
-      --border-color: #e2e8f0; /* Slate 200 */
-    }
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      color: var(--text-dark);
-      background-color: var(--bg-light);
-      line-height: 1.6;
-      padding: 40px 20px;
-    }
-    .resume-container {
-      max-width: 1050px;
-      margin: 0 auto;
-      background: #ffffff;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-      display: grid;
-      grid-template-columns: 320px 1fr;
-      border-radius: 8px;
-      overflow: hidden;
-    }
-    /* LEFT SIDEBAR */
-    .sidebar {
-      background-color: var(--primary-color);
-      color: #ffffff;
-      padding: 40px 30px;
-    }
-    .profile-section h1 {
-      font-size: 26px;
-      line-height: 1.2;
-      margin-bottom: 5px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-    .profile-section .subtitle {
-      color: var(--secondary-color);
-      font-size: 15px;
-      font-weight: 600;
-      margin-bottom: 30px;
-    }
-    .sidebar-heading {
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      color: var(--secondary-color);
-      margin: 30px 0 15px 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      padding-bottom: 5px;
-    }
-    .contact-info p {
-      font-size: 14px;
-      margin-bottom: 10px;
-      word-break: break-all;
-    }
-    .contact-info a {
-      color: #ffffff;
-      text-decoration: none;
-    }
-    .contact-info a:hover {
-      text-decoration: underline;
-    }
-    .skill-badge-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-    .skill-badge {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 4px 10px;
-      border-radius: 4px;
-      font-size: 13px;
-    }
-    /* MAIN CONTENT AREA */
-    .main-content {
-      padding: 40px 40px;
-    }
-    .summary-section p {
-      font-size: 15px;
-      color: var(--text-dark);
-      margin-bottom: 30px;
-    }
-    .section-title {
-      font-size: 18px;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      color: var(--primary-color);
-      border-bottom: 2px solid var(--border-color);
-      padding-bottom: 5px;
-      margin-bottom: 20px;
-    }
-    .timeline-item {
-      margin-bottom: 25px;
-    }
-    .timeline-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 5px;
-    }
-    .job-title {
-      font-size: 16px;
-      font-weight: 700;
-      color: var(--primary-color);
-    }
-    .job-meta {
-      font-size: 14px;
-      color: var(--text-light);
-      font-style: italic;
-    }
-    .job-date {
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--secondary-color);
-    }
-    .timeline-item ul {
-      padding-left: 20px;
-      font-size: 14.5px;
-    }
-    .timeline-item li {
-      margin-bottom: 5px;
-    }
-    /* DASHBOARD EMBED UTILITIES */
-    .project-card {
-      background: var(--bg-light);
-      border: 1px solid var(--border-color);
-      border-radius: 6px;
-      padding: 20px;
-      margin-bottom: 25px;
-    }
-    .project-title {
-      font-size: 16px;
-      font-weight: 700;
-      margin-bottom: 5px;
-      color: var(--primary-color);
-    }
-    .project-desc {
-      font-size: 14px;
-      margin-bottom: 15px;
-      color: var(--text-dark);
-    }
-    /* Wrapper to keep embedded data responsive */
-    .dashboard-embed-wrapper {
-      position: relative;
-      width: 100%;
-      height: 450px; /* Adjust layout depth height as preferred */
-      background: #e2e8f0;
-      border-radius: 4px;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border: 1px dashed var(--text-light);
-    }
-    .dashboard-embed-wrapper iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-    .placeholder-text {
-      color: var(--text-light);
-      font-size: 14px;
-      text-align: center;
-      padding: 20px;
-    }
-    /* RESPONSIVE LAYOUT FOR MOBILE SCREENS */
-    @media (max-width: 768px) {
-      .resume-container {
-        grid-template-columns: 1fr;
-      }
-      body {
-        padding: 10px;
-      }
-      .main-content {
-        padding: 30px 20px;
-    }
-    }
-    /* PRINT MEDIA STYLING (Auto-optimizes clean look when saving to PDF) */
-    @media print {
-      body {
-        background: #ffffff;
-        padding: 0;
-      }
-      .resume-container {
-        box-shadow: none;
-        grid-template-columns: 280px 1fr;
-      }
-      .dashboard-embed-wrapper {
-        display: none; /* Keeps paper /PDF prints from breaking on embedded scripts */
-      }
-      .project-card {
-        page-break-inside: avoid;
-      }
-    }
+    <title>Meena Maharjan | Data Portfolio & Research Case Studies</title>
+    <style>
+        :root {
+            --bg-main: #0f172a;        /* Sleek dark background (Yan Holtz vibe) */
+            --bg-card: #1e293b;        /* Deep slate card backgrounds */
+            --accent-blue: #38bdf8;     /* Vibrant sky blue for technical links */
+            --accent-green: #34d399;    /* Emerald for metrics & achievements */
+            --text-main: #f1f5f9;       /* High-contrast crisp white text */
+            --text-muted: #94a3b8;      /* Soft slate gray for details */
+            --border: #334155;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding-bottom: 60px;
+        }
+
+        /* STICKY HYBRID NAVIGATION (James Le Style) */
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--border);
+            z-index: 100;
+        }
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .logo {
+            font-size: 18px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .logo span { color: var(--accent-blue); }
+        .nav-tabs { display: flex; gap: 10px; }
+        .tab-btn {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-size: 15px;
+            font-weight: 600;
+            padding: 8px 16px;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+        .tab-btn:hover { color: var(--text-main); }
+        .tab-btn.active {
+            background-color: var(--bg-card);
+            color: var(--accent-blue);
+            box-shadow: 0 0 0 1px var(--border);
+        }
+
+        /* MAIN CONTENT HOLDER */
+        .content-wrapper {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .page-tab { display: none; }
+        .page-tab.active { display: block; animation: fadeIn 0.4s ease; }
+
+        /* TAB 1: HERO LANDING & RESUME OVERVIEW */
+        .hero { margin: 40px 0 60px 0; max-width: 800px; }
+        .hero h2 { font-size: 42px; line-height: 1.2; margin-bottom: 15px; }
+        .hero p { font-size: 18px; color: var(--text-muted); margin-bottom: 25px; }
+        .highlight-text { color: var(--accent-blue); font-weight: 600; }
+        .badge-grid { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px; }
+        .badge { background: var(--bg-card); border: 1px solid var(--border); padding: 4px 12px; border-radius: 4px; font-size: 13px; color: var(--accent-blue); }
+
+        /* GRID LAYOUTS */
+        .two-col-grid {
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: 40px;
+        }
+        .section-title {
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-main);
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 8px;
+            margin-bottom: 25px;
+        }
+        .resume-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 24px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .card-header-flex { display: flex; justify-content: space-between; align-items: baseline; }
+        .card-title { font-size: 17px; font-weight: 700; color: var(--accent-blue); }
+        .card-subtitle { font-size: 14px; color: var(--text-muted); margin-bottom: 12px; font-style: italic; }
+        .resume-card ul { padding-left: 20px; font-size: 14.5px; color: var(--text-muted); }
+        .resume-card li { margin-bottom: 6px; }
+
+        /* TAB 2: DETAILED CASE STUDIES (Naledi Narrative Vibe) */
+        .case-study {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 35px;
+            margin-bottom: 40px;
+        }
+        .cs-tag {
+            background: rgba(56, 189, 248, 0.1);
+            color: var(--accent-blue);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .cs-header h3 { font-size: 26px; margin: 10px 0; }
+        .cs-meta { display: flex; gap: 20px; font-size: 13px; color: var(--text-muted); margin-bottom: 25px; }
+        .cs-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+        .cs-block h4 { color: var(--accent-blue); font-size: 15px; text-transform: uppercase; margin-bottom: 8px; }
+        .cs-block p, .cs-block li { font-size: 14.5px; color: var(--text-muted); }
+        .cs-block ul { padding-left: 20px; }
+        .embed-container {
+            width: 100%;
+            height: 480px;
+            background: #0b1329;
+            border-radius: 6px;
+            border: 1px dashed var(--border);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* ANIMATION */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* RESPONSIVENESS */
+        @media (max-width: 850px) {
+            .two-col-grid, .cs-grid { grid-template-columns: 1fr; }
+            .nav-container { flex-direction: column; gap: 15px; }
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
 
-    <div class="resume-container">
-
-      <!--LEFT COLUMN: PROFILE, CONTACT & SKILLS -->
-      <aside class="sidebar">
-        <div class="profile-section">
-          <h1>Meena Maharjan</h1>
-          <div class="subtitle">Data Analyst & Research Professional</div>
+    <header>
+        <div class="nav-container">
+            <div class="logo">MEENA MAHARJAN<span>.io</span></div>
+            <nav class="nav-tabs">
+                <button class="tab-btn active" onclick="switchTab('overview')">Overview</button>
+                <button class="tab-btn" onclick="switchTab('projects')">Case Studies</button>
+                <button class="tab-btn" onclick="switchTab('about')">Research Profile</button>
+            </nav>
         </div>
+    </header>
 
-        <div class="sidebar-heading">Contact Details</div></div>
-        <div class="contact-info">
-          <p> Arlington, TX</p>
-          <p> <a href="tel:+5012739646">(501-273-9646)</a></p>
-          <p> <a href="mailto:email@example.com">mmaharjan039@gmail.com</a></p>
-          <p> <a href="#" target="_blank">www.linkedin.com/in/meena-maharjan-aa6b34150</a></p>
-          <p> <a href="#" target="_blank">https://github.com/MM33NA</a></p>
-        </div>
+    <div class="content-wrapper">
 
-        <div class="sidebar-heading">Technical Skills</div>
-        <div class="skill-badge-container">
-            <span class="skill-badge">Python</span>
-            <span class="skill-badge">SQL</span>
-            <span class="skill-badge">Power BI</span>
-            <span class="skill-badge">Tableau</span>
-            <span class="skill-badge">Pandas / NumPy</span>
-            <span class="skill-badge">Playwright</span>
-            <span class="skill-badge">SHA-256 Hashing</span>
-            <span class="skill-badge">Data Scraping</span>
-        </div>
-
-        <div class="sidebar-heading">Education</div>
-        <div class="contact-info">
-            <p><strong>DBA (In Progress)</strong><br>Business Intelligence & Data Analytics<br><span style="color: var(--secondary-color)">Westcliff University</span></p>
-            <br>
-            <p><strong>MS - Applied Data Analytics</strong><br>University of Central Arkansas<br><span style="color: var(--text-light)">Graduated: Dec 2024</span></p>
-            <br>
-            <p><strong>Master of Public Health (MPH)</strong><br>SRM University</p>
-            <br>
-            <p><strong>Bachelor of Business Studies</strong><br>Tribhuvan University</p>
-        </div>
-    </aside>
-
-    <!-- RIGHT COLUMN: PROFESSIONAL EXPERIENCE & PORTFOLIO -->
-    <main class="main-content">
-        
-        <section class="summary-section">
-            <h2 class="section-title">Professional Summary</h2>
-            <p>Results-driven Data Analyst and Research Professional with over 7 years of experience transforming complex public health and business data into actionable insights. Expert in designing data pipelines, building interactive visualization dashboards, and managing large-scale research initiatives with strict data integrity requirements.</p>
-        </section>
-
-        <section>
-            <h2 class="section-title">Professional Experience</h2>
-            
-            <div class="timeline-item">
-                <div class="timeline-header">
-                    <span class="job-title">Research Manager / Data Analyst</span>
-                    <span class="job-date">2025 - Present</span>
+        <!-- ==================== PAGE 1: OVERVIEW ==================== -->
+        <section id="overview" class="page-tab active">
+            <div class="hero">
+                <h2>Transforming raw programmatic and public health metrics into <span class="highlight-text">defensible, citable intelligence.</span></h2>
+                <p>Data Analyst and Doctoral Researcher specializing in data pipeline architecture, automated digital asset tracking, and custom visual layers built for forensic data transparency.</p>
+                <div class="badge-grid">
+                    <span class="badge">Python (Pandas)</span>
+                    <span class="badge">SQL (PostgreSQL)</span>
+                    <span class="badge">Playwright Automation</span>
+                    <span class="badge">SHA-256 Notarization</span>
+                    <span class="badge">Tableau / Power BI</span>
+                    <span class="badge">Surveillance Architecture</span>
                 </div>
-                <div class="job-meta">Organization Name, Location</div>
-                <ul>
-                    <li>Architected automated data harvesting infrastructure using Python and Playwright to monitor fast-moving digital programmatic networks.</li>
-                    <li>Integrated SHA-256 cryptographic notarization layers onto production file systems to ensure tamper-proof data chains for forensic audit standards.</li>
-                </ul>
             </div>
 
-            <div class="timeline-item">
-                <div class="timeline-header">
-                    <span class="job-title">Public Health Research Manager</span>
-                    <span class="job-date">Previous Years</span>
-                </div>
-                <div class="job-meta">International Research Entities</div>
-                <ul>
-                    <li>Managed data lifecycles for multi-site field operations, validating integrity across relational databases using advanced SQL methodologies.</li>
-                    <li>Designed, deployed, and scaled cross-platform production visualization applications using Tableau and Power BI to align complex metrics for leadership.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section>
-            <h2 class="section-title">Interactive Data Projects</h2>
-            
-            <!-- PROJECT AREA WITH EMBED PLACEHOLDER -->
-            <div class="project-card">
-                <div class="project-title">Project One: Interactive Public Dashboard</div>
-                <div class="project-desc">A live dashboard tracking structural field metrics. Built using automated data engineering frameworks to ingest raw CDC situation summary data dynamically.</div>
-                
-                <div class="dashboard-embed-wrapper">
-                    <!-- 🛠️ HOW TO EMBED YOUR LIVE DASHBOARD:
-                         Replace the placeholder <div> below with your real <iframe> code or embed script block.
-                    -->
-                    <div class="placeholder-text">
-                        <strong>[ Tableau / Power BI Live Embed Code Placeholder ]</strong><br>
-                        To display your live map/chart, paste your script or iframe asset tag directly inside this wrapper.
+            <div class="two-col-grid">
+                <div>
+                    <h3 class="section-title">Core Timeline</h3>
+                    <div class="resume-card">
+                        <div class="card-header-flex">
+                            <span class="card-title">Doctoral Student & Analytics Lead</span>
+                            <span style="color: var(--accent-green); font-size: 14px; font-weight:600;">2025 - Present</span>
+                        </div>
+                        <div class="card-subtitle">Westcliff University — Specialization in BI & Data Analytics</div>
+                        <ul>
+                            <li>Developing decoupled tracking pipelines leveraging automated web frameworks to identify predatory corporate positioning.</li>
+                            <li>Managing production database deployments across distributed environments using structural query optimizations.</li>
+                        </ul>
                     </div>
-                    
-                    <!-- Example of an iframe implementation:
-                    <iframe src="https://public.tableau.com/views/YOUR-DASHBOARD-URL" allowfullscreen></iframe> 
-                    -->
+
+                    <div class="resume-card">
+                        <div class="card-header-flex">
+                            <span class="card-title">Research Professional & Data Analyst</span>
+                            <span style="color: var(--text-muted); font-size: 14px;">5+ Years Exp</span>
+                        </div>
+                        <div class="card-subtitle">Global Health & Enterprise Initiatives</div>
+                        <ul>
+                            <li>Managed structural validation across high-volume relational databases to preserve baseline research parameters.</li>
+                            <li>Engineered executive analytics interfaces to map structural indicators for regulatory and academic review.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- RIGHT SIDEBAR CONTACT CARD -->
+                <div>
+                    <h3 class="section-title">Contact & Profiles</h3>
+                    <div class="resume-card" style="font-size: 14px;">
+                        <p style="margin-bottom: 12px;">📍 Arlington, TX</p>
+                        <p style="margin-bottom: 12px;">✉️ <a href="mailto:your.email@example.com" style="color: var(--accent-blue); text-decoration:none;">your.email@example.com</a></p>
+                        <p style="margin-bottom: 12px;">💻 <a href="#" style="color: var(--accent-blue); text-decoration:none;">GitHub Profile</a></p>
+                        <p style="margin-bottom: 0;">🔗 <a href="#" style="color: var(--accent-blue); text-decoration:none;">LinkedIn Network</a></p>
+                    </div>
                 </div>
             </div>
         </section>
 
-    </main>
-</div>
+        <!-- ==================== PAGE 2: CASE STUDIES ==================== -->
+        <section id="projects" class="page-tab">
+            <h2 class="section-title" style="margin-bottom: 40px;">Deep-Dive Analytical Case Studies</h2>
 
+            <!-- CASE STUDY 1 -->
+            <div class="case-study">
+                <span class="cs-tag">Decoupled Auditing Architecture</span>
+                <div class="cs-header">
+                    <h3>Digital Sentinel: AI Auditing Framework</h3>
+                    <div class="cs-meta">
+                        <span><strong>Stack:</strong> Python, Playwright, SQLite, Gemini API</span>
+                        <span style="color: var(--accent-green);"><strong>Status:</strong> AIpreneurship Top 50 Finalist</span>
+                    </div>
+                </div>
+                <div class="cs-grid">
+                    <div class="cs-block">
+                        <h4>1. The Problem Space</h4>
+                        <p>Digital marketing footprint data is hyper-transitory and challenging to legally preserve. Regulators and analysts lack systematic tools to audit dynamic, personalized digital advertisements targeting vulnerable demographics.</p>
+                    </div>
+                    <div class="cs-block">
+                        <h4>2. The Engineering Pipeline</h4>
+                        <p>Constructed a headless browser routine utilizing Playwright to scrape dynamic UI layouts. Content is funneled into a Python normalization script where assets are cryptographically hashed using SHA-256 for chain-of-custody tracking.</p>
+                    </div>
+                </div>
+                <!-- Interactive Embed Wrapper -->
+                <div class="embed-container">
+                    <div style="color: var(--text-muted); font-size: 14px; text-align: center; padding: 20px;">
+                        <strong>[ Interactive Tableau / Power BI AdRegistry Dashboard Link ]</strong><br>
+                        <span style="font-size:12px;">Paste your script/iframe code here to let users interact with your data outputs in real-time.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CASE STUDY 2 -->
+            <div class="case-study">
+                <span class="cs-tag">Public Health Surveillance</span>
+                <div class="cs-header">
+                    <h3>Live Epidemiological Situation Data Pipeline</h3>
+                    <div class="cs-meta">
+                        <span><strong>Stack:</strong> Python scripting, Automated Cron Job, Github Pages, CSS3</span>
+                    </div>
+                </div>
+                <div class="cs-grid">
+                    <div class="cs-block">
+                        <h4>1. Context & Challenge</h4>
+                        <p>During active disease outbreaks, unstructured health data changes hourly across disparate regulatory channels. Manual tracking limits speed and operational safety for rapid-response deployment teams.</p>
+                    </div>
+                    <div class="cs-block">
+                        <h4>2. The Solution Applied</h4>
+                        <p>Architected an open-source parsing routine that routinely targets and pulls direct updates from structured global health agencies. Data transforms into a standardized JSON array, updating a responsive client interface automatically.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PAGE 3: RESEARCH PROFILE ==================== -->
+        <section id="about" class="page-tab">
+            <div class="two-col-grid" style="grid-template-columns: 1fr 350px;">
+                <div>
+                    <h2 class="section-title">Academic & Methodological Focus</h2>
+                    <div class="resume-card" style="background: none; border: none; padding: 0;">
+                        <p style="color: var(--text-muted); margin-bottom: 20px; font-size: 16px;">
+                            As a first-generation doctoral scholar pursuing a Doctor of Business Administration, my work centers directly on resolving data alignment and integrity gaps in structural tracking frameworks. 
+                        </p>
+                        <p style="color: var(--text-muted); margin-bottom: 25px; font-size: 16px;">
+                            By combining my foundational background in Public Health with advanced Business Intelligence practices, I specialize in looking past static spreadsheets to develop programmatic verification systems that regulators, researchers, and corporate decision-makers can confidently lean on.
+                        </p>
+                        
+                        <h4 style="color: var(--accent-blue); margin-bottom: 10px;">Primary Methodological Competencies</h4>
+                        <ul style="padding-left: 20px; color: var(--text-muted); font-size:15px; margin-bottom: 30px;">
+                            <li style="margin-bottom: 8px;"><strong>Quantitative Analysis:</strong> Research design, epidemiological pipeline construction, and rigorous survey instrument management.</li>
+                            <li style="margin-bottom: 8px;"><strong>Forensic Validation:</strong> Enforcing cryptographic security layers (SHA-256) on production scraping data blocks to preserve audit records.</li>
+                            <li style="margin-bottom: 8px;"><strong>Interface Governance:</strong> Designing cohesive, non-distracting executive metrics dashboards that prevent analytical drift.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="section-title">Institutional Foundations</h2>
+                    <div class="resume-card">
+                        <h5 style="color: var(--accent-blue); font-size:15px;">Westcliff University</h5>
+                        <p style="font-size: 13.5px; color: var(--text-muted); font-style:italic;">Doctor of Business Administration (DBA)</p>
+                        <p style="font-size: 13px; color: var(--accent-green); margin-top: 2px;">Business Intelligence & Data Analytics</p>
+                    </div>
+                    <div class="resume-card">
+                        <h5 style="color: var(--accent-blue); font-size:15px;">Univ. of Central Arkansas</h5>
+                        <p style="font-size: 13.5px; color: var(--text-muted); font-style:italic;">Master of Science (MS)</p>
+                        <p style="font-size: 13px; color: var(--text-muted); margin-top: 2px;">Applied Data Analytics (Dec 2024)</p>
+                    </div>
+                    <div class="resume-card">
+                        <h5 style="color: var(--accent-blue); font-size:15px;">SRM University</h5>
+                        <p style="font-size: 13.5px; color: var(--text-muted); font-style:italic;">Master of Public Health (MPH)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- JAVASCRIPT TAB SWITCHER CONTROLLER -->
+    <script>
+        function switchTab(tabId) {
+            // Remove active classes from all sections
+            document.querySelectorAll('.page-tab').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Add active classes to selected targets
+            document.getElementById(tabId).classList.add('active');
+            
+            // Find clicked button element by matching function attribute text
+            event.target.classList.add('active');
+            
+            // Smoothly scroll window back to top on interaction change
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
