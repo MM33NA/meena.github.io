@@ -15,6 +15,19 @@
 
 <br/>
 
+<!-- Social badges -->
+<a href="https://www.linkedin.com/in/meena-maharjan-aa6b34150/">
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+</a>
+&nbsp;
+<a href="https://scholar.google.com/citations?user=lyUJXogAAAAJ&hl=en">
+  <img src="https://img.shields.io/badge/Google_Scholar-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Google Scholar"/>
+</a>
+&nbsp;
+<img src="https://komarev.com/ghpvc/?username=MM33na&label=Profile+Views&color=63b3ed&style=for-the-badge" alt="Profile Views"/>
+
+</div>
+
 ---
 
 ## `// github stats`
@@ -33,21 +46,6 @@
 
 ---
 
-<!-- Social badges -->
-<a href="https://www.linkedin.com/in/meena-maharjan-aa6b34150/">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-</a>
-&nbsp;
-<a href="https://scholar.google.com/citations?user=lyUJXogAAAAJ&hl=en">
-  <img src="https://img.shields.io/badge/Google_Scholar-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Google Scholar"/>
-</a>
-&nbsp;
-<img src="https://komarev.com/ghpvc/?username=MM33na&label=Profile+Views&color=63b3ed&style=for-the-badge" alt="Profile Views"/>
-
-</div>
-
----
-
 ## `> whoami`
 
 ```python
@@ -59,8 +57,6 @@ meena = {
     "status"    : "Open to collaborate 🟢"
 }
 ```
-
----
 
 ## `// tech stack`
 
